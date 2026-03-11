@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shoaib Akhter — AI Engineer & Data Scientist</title>
+  <meta name="description" content="Shoaib Akhter — AI Engineer, Data Scientist & Full-Stack Developer based in Pakistan."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo" onclick="showPage('home')">Shoaib<em>.</em></div>
+
+    <ul class="nav-center" id="navLinks">
+      <li><a onclick="showPage('home')">Home</a></li>
+      <li><a onclick="showPage('about')">About</a></li>
+      <li><a onclick="showPage('projects')">Projects</a></li>
+      <li><a onclick="showPage('contact')">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="nav-avail">
+        <span class="avail-dot"></span>
+        Available for Work
+      </div>
+      <span class="btn-hire" onclick="showPage('contact')">Hire Me</span>
+    </div>
+
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HOME PAGE
+  ═══════════════════════════════════════ -->
+  <div id="home" class="page active">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-issue reveal r1">Vol. I — Portfolio 2025</div>
+
+        <h1 class="hero-headline reveal r2">
+          AI<br>
+          Engineer<br>
+          <em>&amp; Developer</em>
+        </h1>
+
+        <p class="hero-desc reveal r3">
+          Building production-grade AI systems, intelligent data pipelines, and full-stack applications. Based in Pakistan — open to clients everywhere.
+        </p>
+
+        <div class="hero-cta reveal r4">
+          <span class="btn-primary" onclick="showPage('projects')">View Work ↗</span>
+          <span class="btn-outline" onclick="showPage('contact')">Let's Talk</span>
+        </div>
+      </div>
+
+      <!-- PROFILE PANEL (dark) -->
+      <div class="hero-right reveal r2">
+        <div class="hero-right-top">
+          <div class="identity-label">// Engineer Profile</div>
+          <div class="identity-avatar">SA</div>
+          <div class="identity-name">Shoaib<br>Akhter</div>
+          <div class="identity-roles">
+            <span class="role-tag">AI Engineer</span>
+            <span class="role-tag">Data Scientist</span>
+            <span class="role-tag">Full-Stack Dev</span>
+          </div>
+
+          <div class="id-rows">
+            <div class="id-row">
+              <span class="id-key">Education</span>
+              <span class="id-val">BS Computer Science</span>
+            </div>
+            <div class="id-row">
+              <span class="id-key">University</span>
+              <span class="id-val">Karakoram International University</span>
+            </div>
+            <div class="id-row">
+              <span class="id-key">Location</span>
+              <span class="id-val">Pakistan</span>
+            </div>
+            <div class="id-row">
+              <span class="id-key">Email</span>
+              <span class="id-val"><a href="mailto:shoaibamreen01@gmail.com">shoaibamreen01@gmail.com</a></span>
+            </div>
+            <div class="id-row">
+              <span class="id-key">Phone</span>
+              <span class="id-val"><a href="tel:+923554425255">+92 355 4425255</a></span>
+            </div>
+            <div class="id-row">
+              <span class="id-key">Status</span>
+              <span class="id-val" style="color:#a8d5b5">● Available</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="hero-stats-panel">
+            <div class="stat-box">
+              <div class="stat-big">3<span>+</span></div>
+              <div class="stat-sm">Years Exp.</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-big">15<span>+</span></div>
+              <div class="stat-sm">Projects</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-big">100<span>%</span></div>
+              <div class="stat-sm">Satisfaction</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-big">5<span>★</span></div>
+              <div class="stat-sm">Ratings</div>
+            </div>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/shoaibamreen01" class="social-pill" target="_blank">GitHub</a>
+            <a href="https://www.kaggle.com/shoaibamreen01" class="social-pill" target="_blank">Kaggle</a>
+            <a href="https://www.fiverr.com/users/shoaibakhter749/seller_dashboard" class="social-pill" target="_blank">Fiverr</a>
+            <a href="https://www.upwork.com/freelancers/~01a77c532dd7fb1265" class="social-pill" target="_blank">Upwork</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE STRIP -->
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <span class="marquee-item">Machine Learning</span>
+        <span class="marquee-item">LLM Development</span>
+        <span class="marquee-item">Computer Vision</span>
+        <span class="marquee-item">Natural Language Processing</span>
+        <span class="marquee-item">Django · FastAPI</span>
+        <span class="marquee-item">React · Next.js</span>
+        <span class="marquee-item">PyTorch · TensorFlow</span>
+        <span class="marquee-item">Docker · Linux</span>
+        <!-- repeat for seamless loop -->
+        <span class="marquee-item">Machine Learning</span>
+        <span class="marquee-item">LLM Development</span>
+        <span class="marquee-item">Computer Vision</span>
+        <span class="marquee-item">Natural Language Processing</span>
+        <span class="marquee-item">Django · FastAPI</span>
+        <span class="marquee-item">React · Next.js</span>
+        <span class="marquee-item">PyTorch · TensorFlow</span>
+        <span class="marquee-item">Docker · Linux</span>
+      </div>
+    </div>
+
+    <!-- 3-CARD SECTION -->
+    <div class="home-grid">
+      <div class="home-card">
+        <div class="card-num">01</div>
+        <div class="card-title">Intelligent Systems</div>
+        <p class="card-body">Designing and deploying LLM-powered applications, RAG pipelines, and ML models that go beyond proof-of-concept into real production environments.</p>
+      </div>
+      <div class="home-card">
+        <div class="card-num">02</div>
+        <div class="card-title">Full-Stack Platforms</div>
+        <p class="card-body">From database architecture to responsive front-ends — building complete web platforms using Django, FastAPI, React, and PostgreSQL that scale with your users.</p>
+      </div>
+      <div class="home-card">
+        <div class="card-num">03</div>
+        <div class="card-title">Data Science & Research</div>
+        <p class="card-body">Transforming raw data into strategic insight through rigorous analysis, Kaggle-grade modelling pipelines, and clean, reproducible research workflows.</p>
+      </div>
+    </div>
+
+  </div><!-- /home -->
+
+
+  <!-- ═══════════════════════════════════════
+       ABOUT PAGE
+  ═══════════════════════════════════════ -->
+  <div id="about" class="page">
+
+    <!-- MASTHEAD -->
+    <div class="about-masthead">
+      <div>
+        <div class="masthead-overline">// Bio — Issue 2025</div>
+        <h1 class="masthead-title">
+          The Mind<br>
+          <em>Behind</em><br>
+          The Machine
+        </h1>
+        <p class="masthead-body">
+          I'm Shoaib Akhter — an AI engineer who believes the best technology is invisible: it just works, elegantly, reliably. I build the stuff that happens under the hood.
+        </p>
+      </div>
+      <div class="masthead-right">
+        <div class="about-avatar-wrap">SA</div>
+        <div class="masthead-tags">
+          <span class="m-tag">AI / ML</span>
+          <span class="m-tag">Data Science</span>
+          <span class="m-tag">Full-Stack</span>
+          <span class="m-tag">DevOps</span>
+          <span class="m-tag">Kaggle</span>
+          <span class="m-tag">Available</span>
+        </div>
+        <span class="btn-hire" style="margin-top:0.5rem" onclick="showPage('contact')">Hire Me</span>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="about-body">
+      <div class="about-main">
+
+        <!-- BIO -->
+        <div class="section-eyebrow">// Who I Am</div>
+        <h2 class="section-heading">Engineer. <em>Thinker.</em> Builder.</h2>
+
+        <p class="prose">
+          I'm <strong>Shoaib Akhter</strong>, an AI Engineer and Data Scientist pursuing a <strong>BS in Computer Science at Karakoram International University</strong>. I specialize in turning complex machine learning research into systems that real users can interact with — seamlessly, efficiently, and reliably.
+        </p>
+        <p class="prose">
+          My stack sits at the crossroads of <strong>AI/ML engineering and full-stack development</strong>. I don't stop at notebooks — I package models into production APIs, deploy them in containers, and build the frontend interfaces people actually use. Every project I take on gets the same treatment: designed properly, built cleanly, shipped completely.
+        </p>
+        <p class="prose">
+          On Fiverr and Upwork I've maintained a <strong>100% satisfaction rate</strong> across all engagements. I also compete on Kaggle where applied data science meets creative problem-solving. When I'm not building client work, I'm researching the next technique worth shipping.
+        </p>
+
+        <!-- EXPERIENCE -->
+        <div class="section-eyebrow" style="margin-top:3.5rem">// Experience</div>
+        <h2 class="section-heading" style="margin-bottom:2rem">Where I've <em>Worked</em></h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-date">2024 –<br>Present</div>
+            <div class="tl-body">
+              <div class="tl-role">AI Engineer — Freelance</div>
+              <div class="tl-company">Fiverr · Upwork</div>
+              <ul class="tl-points">
+                <li>Delivered 15+ AI/ML projects across NLP, computer vision, and full-stack development</li>
+                <li>Built and deployed LLM-powered chatbots with LangChain, RAG, and custom fine-tuning</li>
+                <li>Maintained 100% client satisfaction rate across all platforms</li>
+                <li>Automated client workflows using Python, FastAPI, and cloud deployments</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-date">2023 –<br>2024</div>
+            <div class="tl-body">
+              <div class="tl-role">Data Science Projects</div>
+              <div class="tl-company">Kaggle · Academic Research</div>
+              <ul class="tl-points">
+                <li>Competed in multiple Kaggle competitions applying advanced ensemble and deep learning methods</li>
+                <li>Developed data pipelines for EDA, feature engineering, and model evaluation</li>
+                <li>Built computer vision models with PyTorch for object detection and classification tasks</li>
+                <li>Published reproducible notebooks with 90%+ model accuracy benchmarks</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-date">2023 –<br>Now</div>
+            <div class="tl-body">
+              <div class="tl-role">BS Computer Science — Student</div>
+              <div class="tl-company">Karakoram International University</div>
+              <ul class="tl-points">
+                <li>Core coursework in Algorithms, Machine Learning, Database Systems, and Software Engineering</li>
+                <li>Active in applied AI research and capstone engineering projects</li>
+                <li>Bridging academic theory with real-world freelance engineering practice</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="section-eyebrow" style="margin-top:3.5rem">// Technical Skills</div>
+        <h2 class="section-heading" style="margin-bottom:1.5rem">The <em>Toolkit</em></h2>
+
+        <div class="skills-section">
+          <div style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-bottom:0.8rem">AI / Machine Learning</div>
+          <div class="skill-row-item"><span class="skill-label-col">TensorFlow / Keras</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:95%"></div></div><span class="skill-level-label">Expert</span></div>
+          <div class="skill-row-item"><span class="skill-label-col">PyTorch</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:93%"></div></div><span class="skill-level-label">Expert</span></div>
+          <div class="skill-row-item"><span class="skill-label-col">Scikit-learn</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:95%"></div></div><span class="skill-level-label">Expert</span></div>
+          <div class="skill-row-item"><span class="skill-label-col">LangChain / LLMs</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:83%"></div></div><span class="skill-level-label">Advanced</span></div>
+          <div class="skill-row-item"><span class="skill-label-col">NLP (NLTK, Transformers)</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:85%"></div></div><span class="skill-level-label">Advanced</span></div>
+          <div class="skill-row-item"><span class="skill-label-col">Computer Vision (OpenCV)</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:82%"></div></div><span class="skill-level-label">Advanced</span></div>
+
+          <div style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-top:2rem;margin-bottom:0.8rem">Backend & Full-Stack</div>
+          <div class="skill-row-item"><span class="skill-label-col">Python</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:97%"></div></div><span class="skill-level-label">Expert</span></div>
+          <div class="skill-row-item"><span class="skill-label-col">Django / DRF</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:90%"></div></div><span class="skill-level-label">Expert</span></div>
+          <div class="skill-row-item"><span class="skill-label-col">FastAPI</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:88%"></div></div><span class="skill-level-label">Expert</span></div>
+          <div class="skill-row-item"><span class="skill-label-col">React / Next.js</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:75%"></div></div><span class="skill-level-label">Proficient</span></div>
+          <div class="skill-row-item"><span class="skill-label-col">Docker / Linux</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:85%"></div></div><span class="skill-level-label">Advanced</span></div>
+          <div class="skill-row-item"><span class="skill-label-col">PostgreSQL / MySQL</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:82%"></div></div><span class="skill-level-label">Advanced</span></div>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="about-sidebar">
+
+        <div class="sidebar-widget">
+          <div class="widget-title">Quick Stats</div>
+          <div class="widget-row"><span class="widget-key">Experience</span><span class="widget-val">3+ Years</span></div>
+          <div class="widget-row"><span class="widget-key">Projects</span><span class="widget-val">15+</span></div>
+          <div class="widget-row"><span class="widget-key">Satisfaction</span><span class="widget-val">100%</span></div>
+          <div class="widget-row"><span class="widget-key">Fiverr Rating</span><span class="widget-val">⭐ 5.0</span></div>
+          <div class="widget-row"><span class="widget-key">Upwork JSS</span><span class="widget-val">100%</span></div>
+          <div class="widget-row"><span class="widget-key">Kaggle</span><span class="widget-val">Active Competitor</span></div>
+        </div>
+
+        <div class="sidebar-widget">
+          <div class="widget-title">Certifications</div>
+          <div class="cert-item">
+            <div class="cert-icon">🎖️</div>
+            <div><div class="cert-name">Certified AI & Data Science Specialist</div><div class="cert-from">Professional Certification</div></div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">🐍</div>
+            <div><div class="cert-name">Certified Python Developer</div><div class="cert-from">Professional Certification</div></div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">⭐</div>
+            <div><div class="cert-name">Fiverr Seller</div><div class="cert-from">5-Star · 100% Completion</div></div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">🏆</div>
+            <div><div class="cert-name">Upwork Freelancer</div><div class="cert-from">100% JSS · 5-Star</div></div>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <div class="widget-title">Contact</div>
+          <div class="contact-widget">
+            <a href="mailto:shoaibamreen01@gmail.com"><span class="c-icon">📧</span> shoaibamreen01@gmail.com</a>
+            <a href="tel:+923554425255"><span class="c-icon">📞</span> +92 355 4425255</a>
+            <a href="https://github.com/shoaibamreen01" target="_blank"><span class="c-icon">⚙️</span> github.com/shoaibamreen01</a>
+            <a href="https://www.kaggle.com/shoaibamreen01" target="_blank"><span class="c-icon">📊</span> kaggle.com/shoaibamreen01</a>
+            <a href="https://www.fiverr.com/users/shoaibakhter749" target="_blank"><span class="c-icon">⭐</span> Fiverr Profile</a>
+            <a href="https://www.upwork.com/freelancers/~01a77c532dd7fb1265" target="_blank"><span class="c-icon">🏆</span> Upwork Profile</a>
+          </div>
+        </div>
+
+        <!-- CV DOWNLOAD BUTTON -->
+        <div style="margin-top:1.5rem">
+          <span class="btn-primary" style="width:100%;display:block;text-align:center;padding:1rem" onclick="downloadCV()">↓ Download CV</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /about -->
+
+
+  <!-- ═══════════════════════════════════════
+       PROJECTS PAGE
+  ═══════════════════════════════════════ -->
+  <div id="projects" class="page">
+
+    <div class="projects-masthead">
+      <div>
+        <div class="section-eyebrow">// Selected Work</div>
+        <h1 class="section-heading">My <em>Projects</em></h1>
+        <p style="font-size:0.95rem;color:var(--ink3);max-width:500px;line-height:1.7;font-weight:300">
+          A curated selection of AI systems, data science pipelines, and full-stack applications — each built to production standard.
+        </p>
+      </div>
+      <div class="filter-row">
+        <button class="ftab active" onclick="filterProj('all',this)">All</button>
+        <button class="ftab" onclick="filterProj('ai',this)">AI / ML</button>
+        <button class="ftab" onclick="filterProj('web',this)">Web Dev</button>
+        <button class="ftab" onclick="filterProj('nlp',this)">NLP</button>
+        <button class="ftab" onclick="filterProj('cv',this)">Computer Vision</button>
+      </div>
+    </div>
+
+    <div class="projects-list" id="projGrid">
+
+      <div class="proj-card" data-cat="ai cv">
+        <div class="proj-num">01 / 2025</div>
+        <span class="proj-cat-badge cv">Computer Vision</span>
+        <div class="proj-title">Road Accident Detection and Alarm System For GB</div>
+        <p class="proj-desc">Developed a real-time road accident detection system using deep learning and computer vision techniques. Implemented automated alert notifications upon accident detection to enhance emergency response.</p>
+        <div class="proj-tech">
+          <span class="t-tag">Python</span><span class="t-tag">TensorFlow</span><span class="t-tag">OpenCV</span>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="ai nlp">
+        <div class="proj-num">02 / 2025</div>
+        <span class="proj-cat-badge nlp">NLP</span>
+        <div class="proj-title">Cyberbullying Detection</div>
+        <p class="proj-desc">Developed a model using XLM-RoBERTa with BiLSTM layers to classify harmful Bengali social media comments. Focused on handling sarcasm and misleading keywords to improve detection accuracy.</p>
+        <div class="proj-tech">
+          <span class="t-tag">Python</span><span class="t-tag">PyTorch</span><span class="t-tag">Transformers</span>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="web">
+        <div class="proj-num">03 / 2024</div>
+        <span class="proj-cat-badge web">Web Dev</span>
+        <div class="proj-title">Luxury Hotel Management System (Django)</div>
+        <p class="proj-desc">Developed a full-featured luxury hotel management web application using Django. Implemented room booking, customer management, and payment integration with a responsive front-end.</p>
+        <div class="proj-tech">
+          <span class="t-tag">Python</span><span class="t-tag">Django</span><span class="t-tag">HTML/CSS</span><span class="t-tag">Bootstrap</span><span class="t-tag">SQLite</span>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="web nlp">
+        <div class="proj-num">04 / 2024</div>
+        <span class="proj-cat-badge web">Web Dev</span>
+        <div class="proj-title">AI Chatbot (MERN Project)</div>
+        <p class="proj-desc">Built an interactive AI-powered chatbot using the MERN stack integrated with NLP techniques. The chatbot responds to user queries in real time and provides context-aware answers.</p>
+        <div class="proj-tech">
+          <span class="t-tag">MongoDB</span><span class="t-tag">Express</span><span class="t-tag">React</span><span class="t-tag">Node.js</span><span class="t-tag">NLP</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div><!-- /projects -->
+
+
+  <!-- ═══════════════════════════════════════
+       CONTACT PAGE
+  ═══════════════════════════════════════ -->
+  <div id="contact" class="page">
+
+    <div class="contact-masthead">
+      <div class="masthead-overline">// Get In Touch</div>
+      <h1 class="masthead-title">
+        Let's Build<br>
+        <em>Something</em><br>
+        Great.
+      </h1>
+      <p class="masthead-body" style="max-width:520px;margin-top:1rem">
+        Available for freelance projects, consulting, and full-time roles. I respond within 24 hours — tell me what you're building.
+      </p>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- LEFT: CONTACT METHODS -->
+      <div class="contact-left">
+        <div class="section-eyebrow">// Direct Contact</div>
+        <h2 class="section-heading" style="margin-bottom:0.5rem">Reach <em>Out</em></h2>
+
+        <div class="contact-method-big">
+          <div class="cm-icon-wrap">📧</div>
+          <div>
+            <div class="cm-label">Email</div>
+            <div class="cm-value"><a href="mailto:shoaibamreen01@gmail.com">shoaibamreen01@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div class="contact-method-big">
+          <div class="cm-icon-wrap">📞</div>
+          <div>
+            <div class="cm-label">Phone / WhatsApp</div>
+            <div class="cm-value"><a href="https://wa.me/923554425255" target="_blank">+92 355 4425255</a></div>
+          </div>
+        </div>
+
+        <div class="contact-method-big">
+          <div class="cm-icon-wrap">⚙️</div>
+          <div>
+            <div class="cm-label">GitHub</div>
+            <div class="cm-value"><a href="https://github.com/shoaibamreen01" target="_blank">github.com/shoaibamreen01</a></div>
+          </div>
+        </div>
+
+        <div class="contact-method-big">
+          <div class="cm-icon-wrap">📊</div>
+          <div>
+            <div class="cm-label">Kaggle</div>
+            <div class="cm-value"><a href="https://www.kaggle.com/shoaibamreen01" target="_blank">kaggle.com/shoaibamreen01</a></div>
+          </div>
+        </div>
+
+        <!-- PLATFORMS -->
+        <div style="margin-top:2.5rem">
+          <div class="section-eyebrow" style="margin-bottom:1rem">// Freelance Platforms</div>
+          <div class="platform-grid">
+            <a href="https://www.fiverr.com/users/shoaibakhter749/seller_dashboard" class="platform-box" target="_blank">
+              <div class="p-icon">⭐</div>
+              <div class="p-name">Fiverr</div>
+              <div class="p-stat">Seller · 5-Star</div>
+            </a>
+            <a href="https://www.upwork.com/freelancers/~01a77c532dd7fb1265" class="platform-box" target="_blank">
+              <div class="p-icon">🏆</div>
+              <div class="p-name">Upwork</div>
+              <div class="p-stat">Freelancer · 100% JSS</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: FAQ + CV -->
+      <div class="contact-right">
+        <div class="section-eyebrow" style="margin-bottom:1rem">// Frequently Asked</div>
+        <h2 class="section-heading" style="margin-bottom:1.5rem;font-size:1.6rem">Common <em>Questions</em></h2>
+
+        <div class="faq-box">
+          <button class="faq-q-btn" onclick="toggleFaq(this)">What services do you offer? <span class="faq-indicator">+</span></button>
+          <div class="faq-ans">AI/ML development (LLMs, NLP, Computer Vision, Kaggle pipelines), full-stack web development (Django, React, FastAPI), and data science consulting. Both greenfield builds and integration into existing codebases.</div>
+        </div>
+
+        <div class="faq-box">
+          <button class="faq-q-btn" onclick="toggleFaq(this)">Are you available for remote work? <span class="faq-indicator">+</span></button>
+          <div class="faq-ans">Absolutely — 100% remote. I work with clients worldwide across all time zones. Communication via email, WhatsApp, Slack, or any tool you prefer.</div>
+        </div>
+
+        <div class="faq-box">
+          <button class="faq-q-btn" onclick="toggleFaq(this)">How do you structure projects? <span class="faq-indicator">+</span></button>
+          <div class="faq-ans">After an initial discovery call, I provide a scoped proposal with timeline, milestones, and pricing. I work in iterative sprints with regular check-ins so you always know what's happening.</div>
+        </div>
+
+        <div class="faq-box">
+          <button class="faq-q-btn" onclick="toggleFaq(this)">What is your typical turnaround? <span class="faq-indicator">+</span></button>
+          <div class="faq-ans">Small integrations can be completed in a few days. Larger systems typically take 2–6 weeks. I always provide honest timelines upfront and flag blockers early.</div>
+        </div>
+
+        <div class="faq-box">
+          <button class="faq-q-btn" onclick="toggleFaq(this)">Do you work on existing codebases? <span class="faq-indicator">+</span></button>
+          <div class="faq-ans">Yes — I regularly integrate AI features into legacy systems, refactor existing APIs, and improve model performance in production codebases.</div>
+        </div>
+
+        <div class="faq-box">
+          <button class="faq-q-btn" onclick="toggleFaq(this)">Post-delivery support? <span class="faq-indicator">+</span></button>
+          <div class="faq-ans">All projects include a 30-day support window post-delivery. I also offer ongoing maintenance retainers for continued development and monitoring.</div>
+        </div>
+
+        <!-- CV DOWNLOAD -->
+        <div class="cv-download-box">
+          <p>Want the full picture? Download my CV for a complete overview of experience, technical skills, education, and projects.</p>
+
+          <!--
+            ╔══════════════════════════════════════════════════════╗
+            ║  HOW TO ADD YOUR PDF CV:                             ║
+            ║  1. Place your CV file in the same folder as        ║
+            ║     index.html  (e.g. "shoaib_cv.pdf")              ║
+            ║  2. Change the href below to your filename:          ║
+            ║     href="shoaib_cv.pdf"                             ║
+            ║  OR link to Google Drive / Dropbox direct URL        ║
+            ╚══════════════════════════════════════════════════════╝
+          -->
+          <a href="Update_cv.pdf" download="Shoaib_Akhter_CV.pdf" class="btn-cv" id="cvBtn">
+            ↓ Download CV (PDF)
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /contact -->
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer>
+    <div class="footer-logo">Shoaib<em>.</em></div>
+    <div class="footer-copy">© 2025 Shoaib Akhter. All rights reserved.</div>
+    <div class="footer-links">
+      <a onclick="showPage('about')">About</a>
+      <a onclick="showPage('projects')">Projects</a>
+      <a onclick="showPage('contact')">Contact</a>
+      <a href="shoaib_cv.pdf" download="Shoaib_Akhter_CV.pdf">CV</a>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════
+       JAVASCRIPT
+  ═══════════════════════════════════════ -->
+  <script>
+    /* ── CUSTOM CURSOR ── */
+    const cur = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cur.style.left = mx + 'px';
+      cur.style.top = my + 'px';
+    });
+
+    function animRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px';
+      ring.style.top = ry + 'px';
+      requestAnimationFrame(animRing);
+    }
+    animRing();
+
+    document.querySelectorAll('a, button, [onclick], .proj-card, .home-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cur.style.width = '18px'; cur.style.height = '18px';
+        ring.style.width = '50px'; ring.style.height = '50px';
+        ring.style.borderColor = 'var(--ink)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cur.style.width = '10px'; cur.style.height = '10px';
+        ring.style.width = '36px'; ring.style.height = '36px';
+        ring.style.borderColor = 'var(--orange)';
+      });
+    });
+
+    /* ── PAGE NAVIGATION ── */
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      document.getElementById('navbar').classList.remove('open');
+    }
+
+    function toggleMenu() {
+      document.getElementById('navbar').classList.toggle('open');
+    }
+
+    /* ── SCROLL NAV ── */
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 30);
+    });
+
+    /* ── PROJECT FILTER ── */
+    function filterProj(cat, btn) {
+      document.querySelectorAll('.ftab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.proj-card').forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.cat.includes(cat)) ? '' : 'none';
+      });
+    }
+
+    /* ── FAQ ── */
+    function toggleFaq(btn) {
+      btn.parentElement.classList.toggle('open');
+    }
+
+    /* ── CV DOWNLOAD ── */
+    function downloadCV() {
+      /* 
+        If shoaib_cv.pdf is in the same folder, the <a href="shoaib_cv.pdf"> above handles it.
+        This function is a fallback / can be pointed to an external URL:
+      */
+      window.open('/home/shoaib/Desktop/Portflio/Update_cv.pdf', '_blank');
+    }
+
+    /* ── INTERSECTION OBSERVER for skill bars ── */
+    const skillFills = document.querySelectorAll('.skill-bar-fill');
+    const savedWidths = [];
+    skillFills.forEach(el => {
+      savedWidths.push(el.style.width);
+      el.style.width = '0';
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          skillFills.forEach((el, i) => { el.style.width = savedWidths[i]; });
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.2 });
+
+    const skillsSection = document.querySelector('.skills-section');
+    if (skillsSection) observer.observe(skillsSection);
+  </script>
+
+</body>
+</html>
