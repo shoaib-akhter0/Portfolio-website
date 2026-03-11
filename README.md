@@ -30,7 +30,7 @@ A modern, responsive portfolio website showcasing AI engineering, data science, 
 
 ## Live Demo
 
-[View Portfolio](https://shoaibamreen01.github.io/Portfolio-website/)
+[View Portfolio]([https://shoaibamreen01.github.io/Portfolio-website/](https://shoaibamreen01.github.io/Portfolio-website/))
 
 ---
 
